@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet"> 
+<style>
+html {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	min-height: 1000px; 
+	min-width: 600px;
+	background-color: #222;
+	overflow-y: hidden; 
+}
+header {
+	color: #FFCE00;
+	float: left;
+	width: 48%;
+	height: 80px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	background-color: #333;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border: #FFCE00 1px solid;
+}
+
+header span {
+	padding: 20px;
+}
+
+button {
+	display: block;
+	margin: auto;
+	width: 48%;
+	height: 80px;
+	font-family: 'Montserrat', sans-serif;
+	color: #FFCE00;
+	background-color: #333;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	border: #FFCE00 1px solid;
+	font-size: 30px;
+	transition 0.3s;
+	float: right;
+}
+
+button:hover {
+	color: #333;
+	background-color: #FFCE00;
+	border: #333 1px solid;
+	transition: 0.3s;
+}
+
+div {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	height: calc(100vh - 100px);
+	color: #fff;
+	background-color: rgb(13, 13, 13);
+	position: relative;
+	margin-bottom: 0px;
+	bottom: 10px;
+	border-radius: 10px;
+}
+
+div p {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	
+}
+</style>
+<script src="script.js"></script>
+</head>
+
+<body>
+
+
+<div id="chat">
+<p id="messages"></p>
+</div>
+<header>
+<span>ChatAI</span>
+</header>
+<button type="button" onclick="loop()" id="button">start</button>
+</body>
+</html>
